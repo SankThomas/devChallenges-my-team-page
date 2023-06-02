@@ -70,14 +70,6 @@ p.serif {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .section-2 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .section-2 article:nth-child(5) {
-    transform: translateY(40%);
-  }
-
   .section-2 img {
     height: 500px;
   }
@@ -85,5 +77,15 @@ p.serif {
   p.serif {
     top: calc(100% - 69%);
     right: calc(100% - 155%);
+  }
+}
+
+@media (min-width: 992px) {
+  .section-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-2 article:nth-child(5) {
+    transform: translateY(40%);
   }
 }
